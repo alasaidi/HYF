@@ -1,0 +1,199 @@
+/* *{ * for everything
+    margin: 0;
+    padding: 0;
+}*/
+body {
+    background-color: aquamarine;
+    color: black;
+
+    /* SAME AS ABOVE
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    font: norma 16px arial;
+    */
+    line-height: 1em;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+a:hover {
+    color: red;
+}
+
+a:active {
+    color: green;
+}
+
+a:visited {
+    color: yellow;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.button {
+    background-color: red;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+}
+
+.button:hover {
+    background: #000;
+    color: blueviolet;
+
+}
+
+.clr {
+    clear: both;
+}
+
+.box1 {
+    background-color: blueviolet;
+    color: white;
+    border: 5px red solid;
+    /* or you can specifier
+    border-right: 5px re solid;
+    border-left: 5px re solid ;
+    border-top: 5px re solid;
+    border-bottom:5px re solid ;
+     */
+    border-bottom-width: 10px;
+    border-top-style: dotted;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.box1 h1 {
+    font-family: Tahoma;
+    font-weight: 800;
+    font-style: italic;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+.box2 {
+    border: 3px double blue;
+    padding: 20px;
+    margin: 20px;
+}
+
+.categories {
+    border: 1px red solid;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.categories h2 {
+    text-align: center;
+}
+
+.categories ul {
+    padding-left: 20px;
+    list-style: square;
+}
+
+.categories li {
+    padding-bottom: 8px;
+    border-bottom: dotted 1px #333;
+    list-style-image: url(../css/img.png);
+}
+
+.form1 {
+    padding: 20px;
+}
+
+.form1 .form-group {
+    padding-bottom: 15px;
+}
+
+.form1 label {
+    display: block;
+}
+
+.form1 input[type="text"],
+.form1 select {
+    padding: 8px;
+    width: 100%;
+}
+
+.block {
+    float: left;
+    width: 33.3%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#main-block {
+    float: left;
+    width: 70%;
+    padding: 15px;
+    box-sizing: border-box;
+
+}
+
+#sidebar {
+    float: right;
+    width: 30%;
+    background-color: #000;
+    color: white;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.p-box {
+    width: 800px;
+    height: 500px;
+    border: 1px solid #000;
+    margin-top: 30px;
+    ;
+    /* relative it's help to put your content based on the work space that you're using now example it's relative to this box not the whole page.
+    */
+    position: relative;
+    background-image: url(../css/ilg1.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+.p-box h1 {
+    position: absolute;
+    top: 30px;
+    left: 10px;
+}
+
+.p-box h2 {
+    /* An element with position: absolute; is positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed).*/
+    position: absolute;
+    bottom: 30px;
+    right: 10px;
+
+}
+
+.fix-me {
+    position: fixed;
+    top: 400px;
+}
+
+.list li:first-child {
+    background-color: red;
+}
+
+.list li:last-child {
+    background-color: red;
+}
+
+.list li:nth-child(5) {
+    background-color: green;
+}
+
+.list li:nth-child(even) {
+    background-color: green;
+}
