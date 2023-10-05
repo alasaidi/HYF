@@ -25,6 +25,11 @@ body {
     grid-template-rows: minmax(100px, auto);
     gap: 20px;
     /*the space between the items    */
+
+    grid-template-areas: 
+    "a a a a"
+    "b c c c"
+    "d d d d";
 }
 
 .container > * {
@@ -36,11 +41,21 @@ body {
 
 .item1 {
     background-color: white;
-    grid-column: 1 / 3;
-    grid-row: 1 / 3;
+  grid-area: a;
 }
 
 .item2 {
     background-color: rgb(17, 105, 125);
     color: white;
+   grid-area: b;
+}
+.item3 {
+    background-color: rgb(17, 105, 125);
+    color: white;
+  grid-area: c;
+}
+.item4 {
+    background-color: rgb(17, 105, 125);
+    color: white;
+  grid-area: d;
 }
