@@ -28,8 +28,9 @@ body {
 
     grid-template-areas: 
     "a a a a"
-    "b c c c"
+    "b c c . "
     "d d d d";
+    /*create area and each time repeating the name of the area it means that you take that space/ "." to give white space     */
 }
 
 .container > * {
